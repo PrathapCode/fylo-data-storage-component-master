@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serifs;
+  background-color: #0c122c;
+  background-image: url(images/bg-desktop.png);
+  background-size: 1440px 480px;
+  background-repeat: no-repeat;
+  background-position-y: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 23%;
+}
+
+.first {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  background-color: #1d2c67;
+  margin-right: 35px;
+  padding: 40px 100px 30px 35px;
+  border-radius: 10px 100px 10px 10px;
+}
+
+.second {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  background-color: #1d2c67;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 150%;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.icon {
+  background-color: #0c122c;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.logo {
+  margin: 0 0 20px 0;
+}
+
+.one {
+  padding: 10px;
+}
+
+.two {
+  padding: 11px;
+}
+
+.three {
+  padding: 11px;
+}
+
+.loading {
+  height: 15px;
+  background-color: #0c122c;
+  width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 1px solid #0c122c;
+}
+
+.colorloading {
+  width: 75%;
+  height: 15px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+  background-image: linear-gradient(to right, #ffa399, #ff4d97);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 30px;
+}
+
+.white {
+  background-color: white;
+  border-radius: 30px;
+  width: 4%;
+  height: 13px;
+  margin-left: 96%;
+  border-radius: 50px;
+}
+
+.data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.text {
+  color: white;
+  padding: 20px 0px 20px 0px;
+}
+
+.third {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  width: 120px;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  height: 50px;
+  padding: 10px;
+  margin-left: -10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border-radius: 10px 10px 0px 10px;
+}
+
+.limit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 10px;
+}
+
+.limit p {
+  margin-top: 6px;
+  margin-left: 5px;
+}
+
+.bubble {
+  width: 0px;
+  height: 0px;
+  border-right: 10px solid white;
+  border-top: 10px solid white;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  top: 47px;
+  left: 100px;
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    display: block;
+  }
+  body {
+    background-image: url(images/bg-mobile.png);
+    background-size: 425px 650px;
+    background-position-y: 0px;
+  }
+  .first {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .second {
+    width: 100%;
+  }
+  .third {
+    margin-top: -20px;
+    margin-left: 100px;
+    border-radius: 10px;
+  }
+  .bubble {
+    border-right: 0px solid white;
+    border-top: 10px solid white;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+  }
+  .white {
+    background-color: white;
+    border-radius: 30px;
+    width: 8%;
+    height: 12px;
+    margin-left: 96%;
+    border-radius: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
